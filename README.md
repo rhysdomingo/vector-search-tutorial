@@ -1,3 +1,9 @@
+# To start app server
+dense-vector-search-tutorial % node server.js
+
+# To start app UI
+dense-vector-search-tutorial % npm start
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
