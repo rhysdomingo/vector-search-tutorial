@@ -27,8 +27,7 @@ const App = () => {
             errorMessage = error.message; // General Axios error (e.g., network error, timeout)
         }
 
-        // Since this is an error, I'm assuming you'd want to handle it differently. 
-        // As a simple approach, I'm setting the state to an array with a single object that has an error message.
+        // Handle error by setting the state to an array with a single object that has an error message.
         setResult([{ title: 'Error', plot: errorMessage }]);
     }
   };
@@ -36,7 +35,7 @@ const App = () => {
   return (
     <div>
       <h1>MongoDB Atlas - Dense Vector Search - Movies</h1>
-      <SubmitSearch onReverse={handleSearch} />
+      <SubmitSearch onSearch={handleSearch} />
       {result.length > 0 && <SearchResult result={result} />}
     </div>
   );

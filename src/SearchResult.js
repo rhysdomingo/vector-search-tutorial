@@ -13,7 +13,7 @@ const SearchResult = ({ result }) => {
                 {result.map((movie, index) => (
                     <tr key={index}>
                         <td>{movie.title}</td>
-                        <td>{movie.fullplot}</td>
+                        <td>{movie.plot}</td>
                     </tr>
                 ))}
             </tbody>

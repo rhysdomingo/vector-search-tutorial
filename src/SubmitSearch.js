@@ -1,12 +1,11 @@
-// src/ReverseForm.js
+// src/SubmitSearch.js
 import React, { useState } from 'react';
 
-const ReverseForm = ({ onReverse }) => {
+const SubmitSearch = ({ onSearch }) => {
   const [inputText, setInputText] = useState('');
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    onReverse(inputText);
+    onSearch(inputText);
   };
 
   return (
@@ -25,4 +24,4 @@ const ReverseForm = ({ onReverse }) => {
   );
 };
 
-export default ReverseForm;
+export default SubmitSearch;
