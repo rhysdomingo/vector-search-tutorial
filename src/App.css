@@ -58,7 +58,7 @@
   
   /* Making the title field wider */
   th:first-child {
-    width: 40%; /* Set the width of the title column to 40% of the table width */
+    width: 30%; /* Set the width of the title column to n% of the table width */
   }
   
   /* Adding a light gray background color to table headers */
