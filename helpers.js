@@ -34,8 +34,8 @@ async function findSimilarDocuments(embedding) {
     try {
         await client.connect();
         
-        const db = client.db('sample_mflix'); // Replace with your database name.
-        const collection = db.collection('movies'); // Replace with your collection name.
+        const db = client.db('sample_mflix'); // Replace with database name.
+        const collection = db.collection('movies'); // Replace with collection name.
         
         // Query for similar documents.
         const documents = await collection.aggregate([
