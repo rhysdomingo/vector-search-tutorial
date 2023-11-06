@@ -34,7 +34,7 @@ async function findSimilarDocuments(embedding) {
     try {
         await client.connect();
         
-        const db = client.db('sample_mflix'); // Replace with database name.
+        const db = client.db('vectorsearch_mflix'); // Replace with database name.
         const collection = db.collection('movies'); // Replace with collection name.
         
         // Query for similar documents.
