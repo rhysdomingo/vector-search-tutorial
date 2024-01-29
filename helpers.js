@@ -40,13 +40,12 @@ async function findSimilarDocuments(embedding) {
         // Query for similar documents.
         const documents = await collection.aggregate([
             {
-            "$search": {
-            "index": "idx_dvs_movies",
-            "knnBeta": {
-            "vector": embedding,
+            "$vectorSearch": {
             "path": "plot_embedding",
-            "k": 20
-            }
+            "index": "idx_dvs_movies",
+            "queryVector": embedding,
+            "numCandidates": 200,
+            "limit":20
             }
             }
             ]).toArray();
