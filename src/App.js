@@ -36,7 +36,12 @@ const App = () => {
     <div className="App">
       <h1>
         <span className="title-main">MongoDB Atlas</span><br />
-        <span className="title-sub">Vector Search</span>
+        <span className="title-sub">Vector Search Tutorial</span><br/>
+        <span className="title-sub2">
+          <a href="https://www.mongodb.com/developer/products/atlas/semantic-search-mongodb-atlas-vector-search/" target="_blank" style={{ textDecoration: 'underline', color: '#0000FF' }}>
+          https://www.mongodb.com/developer/products/atlas/semantic-search-mongodb-atlas-vector-search/
+          </a>
+        </span>
       </h1>
       <SubmitSearch onSearch={handleSearch} />
       <div className="table-responsive">

@@ -61,6 +61,11 @@
     font-family: 'Monaco', 'Times New Roman', Times, serif;
     color: #00684a; 
   }
+  
+  .title-sub2 {
+    font-size: 16px; /* or the size you want */
+    font-family: 'Monaco', 'Times New Roman', Times, serif;
+  }
   /* Styling the table */
   table {
     width: 100%;
