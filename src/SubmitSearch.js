@@ -10,7 +10,7 @@ const SubmitSearch = ({ onSearch }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="inputText">Enter Search:</label>
+      <label htmlFor="inputText">Search Movie Plot: </label>
       <input
         type="text"
         id="inputText"
@@ -19,6 +19,7 @@ const SubmitSearch = ({ onSearch }) => {
         required
         className="input-textbox"
       />
+      &nbsp;
       <button type="submit">Submit</button>
     </form>
   );

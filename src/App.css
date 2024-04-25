@@ -1,6 +1,12 @@
 .App {
-    text-align: center;
-    padding-left: 20px;
+  text-align: center;
+  padding-left: 20px;
+  width: calc(100% - 20px);
+  box-sizing: border-box;
+}
+
+  .table-responsive {
+    overflow-x: auto;
   }
   
   .App-logo {
@@ -43,12 +49,25 @@
     height: 20px;
   }
   
+  /* Style the headers */
+  .title-main {
+    font-size: 48px; 
+    font-family: 'Monaco', 'Times New Roman', Times, serif;
+    color: #00684a; /* replace with the color you want */
+  }
+
+  .title-sub {
+    font-size: 36px; /* or the size you want */
+    font-family: 'Monaco', 'Times New Roman', Times, serif;
+    color: #00684a; 
+  }
   /* Styling the table */
   table {
-    width: 100%; /* Use the entire width of its container */
-    border-collapse: collapse; /* Collapse borders */
-    margin-top: 20px; /* Add some space above the table */
-  }
+    width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }  
   
   /* Adding borders to table headers and cells */
   th, td {
@@ -71,4 +90,5 @@
   tr:hover {
     background-color: #f5f5f5;
   }
+
   

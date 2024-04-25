@@ -34,9 +34,14 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>MongoDB Atlas - Vector Search - Movies</h1>
+      <h1>
+        <span className="title-main">MongoDB Atlas</span><br />
+        <span className="title-sub">Vector Search</span>
+      </h1>
       <SubmitSearch onSearch={handleSearch} />
+      <div className="table-responsive">
       {result.length > 0 && <SearchResult result={result} />}
+      </div>
     </div>
   );
 };
