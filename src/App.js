@@ -33,7 +33,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="App">
       <h1>MongoDB Atlas - Vector Search - Movies</h1>
       <SubmitSearch onSearch={handleSearch} />
       {result.length > 0 && <SearchResult result={result} />}

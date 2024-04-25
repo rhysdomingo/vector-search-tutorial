@@ -36,13 +36,14 @@ async function findSimilarDocuments(embedding) {
         
         const db = client.db('vectorsearch_mflix'); // Replace with database name.
         const collection = db.collection('movies'); // Replace with collection name.
-        
+
+
         // Query for similar documents.
         const documents = await collection.aggregate([
             {
             "$vectorSearch": {
             "path": "plot_embedding",
-            "index": "idx_dvs_movies",
+            "index": "idx_vs_movies",
             "queryVector": embedding,
             "numCandidates": 200,
             "limit":20
