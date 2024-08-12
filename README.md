@@ -1,3 +1,7 @@
+# Description
+This application utilizes the MongoDB Atlas sample mflix movies dataset and vector search capabilities to demonstrate semantic search functionality on movie plots. It extends the concepts from a MongoDB tutorial (which can be found [here](https://www.mongodb.com/developer/products/atlas/semantic-search-mongodb-atlas-vector-search/)), by providing a practical front end and additional components using the MERN stack for testing. This setup offers a hands-on experience in implementing and testing semantic search in a real-world application scenario.
+
+
 # To start app server
 dense-vector-search-tutorial % node server.js
 
